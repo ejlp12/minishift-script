@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ImageStream
+metadata:
+  annotations:
+    openshift.io/image.dockerRepositoryCheck: 2017-10-12T18:50:11Z
+  creationTimestamp: null
+  generation: 1
+  name: docker-oracle-xe
+spec:
+  tags:
+  - name: '1.0'
+    annotations:
+      openshift.io/display-name: Oracle XE
+      description: >-
+        Oracle XE database for development and testing purpose
+      tags: 'builder,oracle'
+      version: '1.0'
+      iconClass: icon-mysql-database
+    from:
+      kind: DockerImage
+      name: 172.30.1.1:5000/openshift/docker-oracle-xe:latest
+    generation: 1
+    importPolicy: {}
+    name: latest
+    referencePolicy:
+      type: Source
+status:
+  dockerImageRepository: ""

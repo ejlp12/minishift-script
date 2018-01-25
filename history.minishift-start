@@ -1,0 +1,1 @@
+minishift start  --vm-driver=virtualbox --cpus=2 --disk-size=20GB --memory=3GB --skip-registry-check --metrics --skip-registration

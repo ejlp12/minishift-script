@@ -1,0 +1,8 @@
+# oc status -n default
+# oc get nodes,hostsubnet,all,events -n default
+# oc logs <docker-registry-pod> -n default
+# oc describe all -l docker-registry -n default
+# oc get dc <registry> -o yaml -n default 
+# oadm diagnostics 
+
+# sosreport -k docker.all=on
