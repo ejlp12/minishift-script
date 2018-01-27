@@ -2,8 +2,8 @@
 
 DEBUG=false
 AUTH_RHEL=false
-export MINISHIFT_USERNAME=eryan.ariobowo
-export MINISHIFT_PASSWORD=ariobowo.eryan
+export MINISHIFT_USERNAME=
+export MINISHIFT_PASSWORD=
 export MINISHIFT_ENABLE_EXPERIMENTAL=y
 
 if [ -f minishift ]; then
